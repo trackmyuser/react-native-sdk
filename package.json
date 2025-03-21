@@ -1,8 +1,9 @@
 {
   "name": "@trackmyuser/react-native-sdk",
-  "version": "0.1.0",
+  "version": "0.0.1",
+  "private": false,
   "description": "TrackMyUser's Measurement and Attribution SDK",
-  "source": "./src/index.tsx",
+  "source": "./src/index.js",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
   "exports": {
@@ -47,12 +48,15 @@
   },
   "keywords": [
     "react-native",
+    "mmp",
+    "trackmyser",
+    "attribution",
     "ios",
     "android"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trackmyuser/react-native-sdk.git.git"
+    "url": "git+https://github.com/trackmyuser/react-native-sdk.git"
   },
   "author": "trackmyuser <dev@trackmyuser.com> (https://trackmyuser.com)",
   "license": "MIT",

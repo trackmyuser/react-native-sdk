@@ -12,22 +12,14 @@ npm install @trackmyuser/react-native-sdk
 
 
 ```js
-import { multiply } from '@trackmyuser/react-native-sdk';
+import TrackMyUserSDK, { TrackMyUserConfig, TrackMyUserEvent } from '@trackmyuser/react-native-sdk';
 
-// ...
+const config = new TrackMyUserConfig();
+config.setAndroidSdkKey("Android_SDK_KEY");
+config.setiOSKey("iOS_SDK_KEY");
 
-const result = await multiply(3, 7);
+TrackMyUserSDK.init(config);
+
+const event = new TrackMyUserEvent("EVENT_CODE");
+TrackMyUserSDK.trackEvent(event);
 ```
-
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
