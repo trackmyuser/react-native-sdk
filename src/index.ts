@@ -6,7 +6,7 @@ import {
 
 const { TrackMyUserSDK: nativeBridge } = NativeModules;
 
-class TrackMyUserConfig  {
+export class TrackMyUserConfig  {
 	androidSdkKey = '';
 	iOSKey = '';
   hasDeferredDeeplinkCallback = false;
@@ -30,7 +30,7 @@ class TrackMyUserConfig  {
   };
 }
 
-class TrackMyUserEvent {
+export class TrackMyUserEvent {
 	eventCode: string = '';
   currency: string = '';
 	revenue = 0;
