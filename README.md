@@ -15,7 +15,7 @@ npm install @trackmyuser/react-native-sdk
 import TrackMyUserSDK, { TrackMyUserConfig, TrackMyUserEvent } from '@trackmyuser/react-native-sdk';
 
 const config = new TrackMyUserConfig();
-config.setAndroidSdkKey("Android_SDK_KEY");
+config.setAndroidKey("Android_SDK_KEY");
 config.setiOSKey("iOS_SDK_KEY");
 
 TrackMyUserSDK.init(config);

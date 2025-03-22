@@ -11,7 +11,7 @@ class TrackMyUserConfig  {
 	iOSKey = '';
   hasDeferredDeeplinkCallback = false;
 
-  setAndroidSdkKey(sdkKey: string) {
+  setAndroidKey(sdkKey: string) {
     this.androidSdkKey = sdkKey
   }  
 
