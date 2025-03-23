@@ -21,7 +21,7 @@ class TrackMyUserModule: NSObject, RCTBridgeModule {
       let timeoutInterval = (dict["ATTUserAuthorizationTimeoutInterval"] as? Int) ?? 0
       //let deeplinking = dict["hasDeferredDeeplinkCallback"] as! Bool?
       let config = TrackMyUserConfig(appToken: appToken)
-      config.setATTUserAuthorizationTimeout(timeoutInterval)
+      config.setATTUserAuthorizationTimeout(timeoutInterval: timeoutInterval)
 //      if (deeplinking != nil) {
 //        config.setDeeplinkListerner(listener: self)
 //      }
