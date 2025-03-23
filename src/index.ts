@@ -10,6 +10,7 @@ export class TrackMyUserConfig  {
 	androidSdkKey = '';
 	iOSKey = '';
   hasDeferredDeeplinkCallback = false;
+  ATTUserAuthorizationTimeoutInterval = 15;
 
   setAndroidKey(sdkKey: string) {
     this.androidSdkKey = sdkKey
@@ -18,6 +19,10 @@ export class TrackMyUserConfig  {
   setiOSKey(sdkKey: string) {
     this.iOSKey = sdkKey
   }  
+
+  setATTUserAuthorizationTimeout(timeoutInterval: number) {
+    this.ATTUserAuthorizationTimeoutInterval = timeoutInterval
+  }
 
   setOnDeeplinkResolveListener(callbackListener: any) {
     this.hasDeferredDeeplinkCallback = true
@@ -49,7 +54,8 @@ export const TrackMyUserSDK = {
   init: (config: TrackMyUserConfig)=> {
     nativeBridge.initializeSDK({
       androidSdkKey: config.androidSdkKey,
-      iOSKey: config.iOSKey
+      iOSKey: config.iOSKey,
+      ATTUserAuthorizationTimeoutInterval: config.ATTUserAuthorizationTimeoutInterval
     }); 
   },
   trackEvent: (event: TrackMyUserEvent)=>{

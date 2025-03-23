@@ -17,6 +17,12 @@ const config = new TrackMyUserConfig();
 config.setAndroidKey("Android_SDK_KEY");
 config.setiOSKey("iOS_SDK_KEY");
 
+// (iOS only): If you are using App Tracking Transparency (ATT),
+// Set the amount of time in seconds that the SDK should wait for the user's ATT response.
+// The default wait time is 15 seconds.
+// (Set the value as 0 if you are not displaying the ATT prompt)
+config.setATTUserAuthorizationTimeout(0);
+
 TrackMyUserSDK.init(config);
 ```
 
