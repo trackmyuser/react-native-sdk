@@ -31,7 +31,7 @@ public class TrackMyUserSDK extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void initializeSDK(ReadableMap initializeMap) {
-        String sdkKey = initializeMap.getString("androidSDKKey");
+        String sdkKey = initializeMap.getString("androidSdkKey");
         TrackMyUserConfig config = new TrackMyUserConfig(sdkKey);
 
         if (initializeMap.hasKey("hasDeferredDeeplinkCallback")) {
