@@ -1,6 +1,6 @@
 {
   "name": "@trackmyuser/react-native-sdk",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": false,
   "description": "TrackMyUser's Measurement and Attribution SDK",
   "source": "./src/index.js",
