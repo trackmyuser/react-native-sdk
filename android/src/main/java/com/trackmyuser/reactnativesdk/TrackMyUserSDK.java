@@ -37,7 +37,7 @@ public class TrackMyUserSDK extends ReactContextBaseJavaModule {
         if (initializeMap.hasKey("hasDeferredDeeplinkCallback")) {
             config.setDeeplinkListener(new DeeplinkListener() {
                 @Override
-                public void onDeepLinkResolve(Deeplink deeplink) {
+                public void onDeeplinkResolve(Deeplink deeplink) {
 
                     WritableMap writableMap = Arguments.createMap();
                     for (Map.Entry<String, String> entry : deeplink.getParams().entrySet()) {
