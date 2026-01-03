@@ -40,7 +40,7 @@ export class TrackMyUserEvent {
   currency: string = '';
 	revenue = 0;
 
-  TrackMyUserEvent(eventCode: string) {
+  constructor(eventCode: string) {
     this.eventCode = eventCode
   }
 
